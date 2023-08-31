@@ -1,0 +1,10 @@
+<div>
+    <h2>Chat with GPT</h2>
+    <input type="text" [(ngModel)]="query" placeholder="Enter your query" />
+    <button (click)="sendQuery()">Send</button>
+    <div *ngIf="response">
+      <p><strong>Response:</strong></p>
+      <p>{{ response }}</p>
+    </div>
+  </div>
+  
